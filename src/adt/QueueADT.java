@@ -10,12 +10,15 @@ public interface QueueADT<E> {
     //add method inserts item at the rear of the queue
     boolean add(E item);
 
-    // remove method , removes the entry 
+    // remove method ,removes the entry from the front of the queue and also returns if the queue is empty or not
     E remove();
 
+    //returns the entry at the front of the queue without removing it ; returns null if the queue is empty
     E peek();
 
+    //poll method returns the entry at the front of the queue without removing it.
     E poll();
 
+    //element method  returns the value at the front of the queue without removing it. throws NoSuchElementException if queue is empty
     E element();
 }
