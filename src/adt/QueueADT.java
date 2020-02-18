@@ -7,9 +7,10 @@ public interface QueueADT<E> {
      * @param item the data that is to be stored in the node.
      * @return true when the node is added to the queue.
      */
-    //It inserts item at the rear of the queue
+    //add method inserts item at the rear of the queue
     boolean add(E item);
 
+    // remove method , removes the entry 
     E remove();
 
     E peek();
